@@ -1,0 +1,91 @@
+body {
+  background-color: #ccc;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin-left: 800px;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#image-container {
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 700px; /* Agrega un margen inferior para separar el contenido siguiente */
+}
+
+.titulo {
+  font-family: Helvetica;
+  font-size: 50px; /* Tamaño de fuente en píxeles */
+  color: #ffffff; /* Color del texto en formato hexadecimal */
+  text-align: center; /* Centrar el texto horizontalmente */
+  margin-bottom: 20px; /* Espaciado inferior */
+  /* Puedes agregar más propiedades aquí según tus necesidades */
+}
+
+/* Estilos paraa imagen */
+#image {
+  width: 100%;
+  height: auto;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1; /* Para que esté detrás del contenido */
+}
+
+form {
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+
+label,
+input {
+  display: block;
+  margin-bottom: 10px;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+}
+
+button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+/* Oculta todas las secciones excepto la de inicio por defecto */
+section:not(#inicio) {
+  display: none;
+}

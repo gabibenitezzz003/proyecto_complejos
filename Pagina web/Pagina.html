@@ -1,178 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Complejo los locos</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-        }
-
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        nav ul li {
-            display: inline;
-            margin-right: 20px;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            color: #fff;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-        }
-
-        h1, h2, h3 {
-            color: #333;
-        }
-
-        form {
-            border: 1px solid #ccc;
-            padding: 20px;
-        }
-
-        label, input {
-            display: block;
-            margin-bottom: 10px;
-        }
-
-        select {
-            width: 100%;
-            padding: 10px;
-        }
-
-        button {
-            background-color: #333;
-            color: #fff;
-            border: none;
-            padding: 10px 20px;
-            cursor: pointer;
-        }
-
-        img {
-            max-width: 100%;
-            height: auto;
-            margin-bottom: 20px;
-        }
-
-        /* Oculta todas las secciones excepto la de inicio por defecto */
-        section:not(#inicio) {
-            display: none;
-        }
-    </style>
-</head>
-<body>
+    <link rel="stylesheet" href="Pagina.css" tipe="text/css" />
+    <script src="archivo.js"></script>
+  </head>
+  <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#reserva">Reserva de Complejos</a></li>
-                <li><a href="#informacion">Información sobre los Complejos</a></li>
-                <li><a href="#ubicacion">Ubicación y Contacto</a></li>
-                <li><a href="#fotos">Fotos</a></li>
-            </ul>
-        </nav>
+      <nav>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#reserva">Reservar</a></li>
+          <li><a href="#informacion">Departamentos</a></li>
+          <li><a href="#ubicacion">Contacto</a></li>
+          <li><a href="#fotos">Galeria</a></li>
+          <li><a href="#turismo">Turismo</a></li>
+        </ul>
+      </nav>
     </header>
 
     <section id="inicio">
-        <div class="container">
-            <h1>Bienvenido a nuestra página de Reserva de Complejos</h1>
-            <img src="imagenes/imagen1.jpg" alt="Imagen de bienvenida">
-        </div>
+      <h1 class="titulo">COMPLEJOS DE SOL Y VALLE</h1>
+      <div id="image-container">
+        <img id="image" src="imagenes/4.jpg" alt="Imagen" />
+      </div>
     </section>
 
     <section id="reserva">
-        <div class="container">
-            <h2>Reserva tu complejo</h2>
-            <form><!-- Formulario de reserva -->
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
-    
-                <label for="fecha">Fecha de reserva:</label>
-                <input type="date" id="fecha" name="fecha" required>
-    
-                <label for="hora">Hora de reserva:</label>
-                <input type="time" id="hora" name="hora" required>
-    
-                <label for="complejo">Complejo:</label>
-                <select id="complejo" name="complejo" required>
-                    <option value="complejo1">Complejo 1</option>
-                    <option value="complejo2">Complejo 2</option>
-                    <option value="complejo3">Complejo 3</option>
-                </select> 
-            </form><!-- Hasta aqui aquí -->
-        </div>
+      <div class="container">
+        <h2>Reserva tu complejo</h2>
+        <form>
+          <!-- Formulario de reserva -->
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required />
+
+          <label for="fecha">Fecha de reserva:</label>
+          <input type="date" id="fecha" name="fecha" required />
+
+          <label for="hora">Hora de reserva:</label>
+          <input type="time" id="hora" name="hora" required />
+
+          <label for="complejo">Complejo:</label>
+          <select id="complejo" name="complejo" required>
+            <option value="complejo1">Complejo 1</option>
+            <option value="complejo2">Complejo 2</option>
+            <option value="complejo3">Complejo 3</option>
+          </select>
+        </form>
+        <!-- Hasta aqui aquí -->
+      </div>
     </section>
 
     <section id="informacion">
-        <div class="container">
-            <h2>Información sobre los Complejos</h2>
-            <p>Aquí hay que agregar información sobre los complejos y sus características.</p>
-            <div id="imagenes">
-                <h3>Imágenes de los Complejos</h3>
-                <!-- Aquí puedes agregar imágenes de los complejos -->
-            </div>
+      <div class="container">
+        <h2>Información sobre los Complejos</h2>
+        <p>
+          Aquí hay que agregar información sobre los complejos y sus
+          características.
+        </p>
+        <div id="imagenes">
+          <h3>Imágenes de los Complejos</h3>
+          <!-- Aquí puedes agregar imágenes de los complejos -->
         </div>
+      </div>
     </section>
 
     <section id="ubicacion">
-        <div class="container">
-            <h2>Ubicación y Contacto</h2>
-            <p>Agrega información de ubicación y contactos aquí.</p>
-        </div>
+      <div class="container">
+        <h2>Ubicación y Contacto</h2>
+        <p>Agrega información de ubicación y contactos aquí.</p>
+      </div>
     </section>
 
     <section id="fotos">
-        <div class="container">
-            <h2>Fotos de los Complejos</h2>
-            <p>Aquí puedes mostrar muchas fotos de los complejos.</p>
-            <!-- Agrega las fotos de los complejos aquí -->
-        </div>
+      <div class="container">
+        <h2>Fotos de los Complejos</h2>
+        <p>Aquí puedes mostrar muchas fotos de los complejos.</p>
+        <!-- Agrega las fotos de los complejos aquí -->
+      </div>
     </section>
 
     <script>
-        // Función para cambiar la sección visible al hacer clic en un enlace del menú
-        function mostrarSeccion(seccionId) {
-            // Oculta todas las secciones
-            var secciones = document.querySelectorAll('section');
-            secciones.forEach(function(seccion) {
-                seccion.style.display = 'none';
-            });
-
-            // Muestra la sección seleccionada
-            var seccionMostrada = document.getElementById(seccionId);
-            seccionMostrada.style.display = 'block';
-        }
-
-        // Agrega un evento de clic a los enlaces del menú para cambiar la sección visible
-        var enlacesMenu = document.querySelectorAll('nav ul li a');
-        enlacesMenu.forEach(function(enlace) {
-            enlace.addEventListener('click', function(event) {
-                event.preventDefault();
-                var seccionId = enlace.getAttribute('href').substr(1); // Obtiene el ID de la sección
-                mostrarSeccion(seccionId);
-            });
+      // Función para cambiar la sección visible al hacer clic en un enlace del menú
+      function mostrarSeccion(seccionId) {
+        // Oculta todas las secciones
+        var secciones = document.querySelectorAll("section");
+        secciones.forEach(function (seccion) {
+          seccion.style.display = "none";
         });
+
+        // Muestra la sección seleccionada
+        var seccionMostrada = document.getElementById(seccionId);
+        seccionMostrada.style.display = "block";
+      }
+
+      // Agrega un evento de clic a los enlaces del menú para cambiar la sección visible
+      var enlacesMenu = document.querySelectorAll("nav ul li a");
+      enlacesMenu.forEach(function (enlace) {
+        enlace.addEventListener("click", function (event) {
+          event.preventDefault();
+          var seccionId = enlace.getAttribute("href").substr(1); // Obtiene el ID de la sección
+          mostrarSeccion(seccionId);
+        });
+      });
     </script>
-</body>
+  </body>
 </html>
-
-
