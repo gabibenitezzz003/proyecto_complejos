@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sol&Valle</title>
+    <link rel="stylesheet" href="Inicio.css" tipe="text/css" />
+    <script src="inicio.js" defer></script>
+    <link rel="icon" href="imagenes/Icono.ico" sizes="16x20 32x40" />
+  </head>
+  <body>
+    <ul class="contact-list">
+      <li>
+        <img src="imagenes/cositas/whatsapp-w.svg" alt="Logo WhatsApp" />
+        <span>(+54) 9 260410-5231</span>
+      </li>
+      <li>
+        <img src="imagenes/cositas/location-w.svg" alt="Logo Maps" />
+        <span>Alvarez Condarco 936, San Rafael</span>
+      </li>
+      <li>
+        <img src="imagenes/cositas/mail-w.svg" alt="Logo Correo" />
+        <span>complejodelsolyvalle@gmail.com</span>
+      </li>
+    </ul>
+
+    <header class="header">
+      <img src="imagenes/Logo2.png" alt="Logo" />
+      <nav>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li>
+            <a href="#reserva" data-color="#locura">Reservar</a>
+          </li>
+          <li>
+            <a href="#info" data-color="#ccc">Departamentos</a>
+          </li>
+          <!-- Agrega los atributos data-color para cada enlace y sección -->
+          <li><a href="#ubicacion" data-color="#ccc">Contacto</a></li>
+          <li><a href="#fotos" data-color="#fff">Galeria</a></li>
+          <li><a href="#turismo" data-color="#45C8F5">Turismo</a></li>
+          <li><a href="#login" data-color="#132BFF">Log in</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="inicio" class="seccion-inicio">
+      <h1 class="titulo">COMPLEJOS DE SOL Y VALLE</h1>
+      <h2 class="titulo">Tenemos lo que estas buscando</h2>
+      <div id="image-container">
+        <img id="image" src="imagenes/10.png" />
+      </div>
+      <div class="container">
+        <div class="content-box">
+          <img
+            src="imagenes/cositas/whatsapp-g.svg"
+            alt="Logo WhatsApp"
+            class="logo"
+          />
+          <h1 class="titulo2">Contactanos</h1>
+        </div>
+      </div>
+      <div class="Datita">
+        <h1 class="titulo">Sobre Nosotros</h1>
+        <p class="parrafo">
+          Nuestro complejo se inauguró en diciembre de 2017 y se encuentra a 100
+          metros de la avenida por la cual accedemos a los principales destinos
+          turísticos del sur mendocino y a 10 cuadras del centro.
+        </p>
+        <p class="parrafo">
+          Departamentos para 4 personas: Dúplex con habitación con aire
+          acondicionado, TV con cable de 33" y baño en planta alta yen plata
+          baja living comedor con Aire Acondicionado, TV Smart de 50" y Cocina
+          equipada con microondas, heladera, vajilla completa y pava eléctrica.
+        </p>
+        <p class="parrafo">
+          Departamentos para 6 personas: Dúplex con 2 habitaciones con aire
+          acondicionado y baño en planta alta, Una con 1 cama matrimonial, una
+          individual y TV de 33" y la otra con 3 camas individuales.En plata
+          baja living comedor con Aire Acondicionado, TV Smart de 50", Un
+          segundo baño y Cocina equipada con microondas, heladera, vajilla
+          completa y pava eléctrica..
+        </p>
+      </div>
+    </section>
+    <section id="reserva" class="seccion-reserva">
+      <h1 class="titulo">Disponibilidad</h1>
+      <div id="image" data-text-color="red">
+        <img id="image" src="imagenes/blue-sky.jpg" />
+      </div>
+    </section>
+    <!--Trabajare-->
+    <section id="info" class="info">
+      <h1 class="titulo">Nuestros departamentos</h1>
+      <div id="image" data-text-color="red">
+        <img id="image" src="imagenes/blue-sky.jpg" />
+      </div>
+      <div class="containerdep">
+        <div class="boxdep">
+          <h1>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+            rerum exercitationem ducimus doloremque, dolor unde dicta odio
+            voluptate, tempora iste ipsam. Corporis recusandae cumque, harum
+            reprehenderit ex natus ea laborum!
+          </h1>
+        </div>
+        <div class="boxdep">
+          <h1>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
+            sit soluta atque voluptas itaque sequi aperiam nam nemo, dolores
+            accusantium corporis hic doloremque ipsa tempore possimus vitae
+            alias nisi sint.
+          </h1>
+        </div>
+      </div>
+    </section>
+    <!--Trabajare-->
+    <section id="ubicacion">
+      <h1 class="titulo">Podes contactarnos o dejar tu consulta</h1>
+      <div id="image" data-text-color="red">
+        <img id="image" src="imagenes/blue-sky.jpg" />
+      </div>
+      <div class="contact-form">
+        <form action="procesar_consulta.php" method="post">
+          <label for="contacto">Déjanos tu contacto:</label>
+          <input
+            type="text"
+            id="contacto"
+            name="contacto"
+            placeholder="Email o número de teléfono"
+            required
+          />
+
+          <label for="consulta">Escribe tu consulta:</label>
+          <textarea
+            id="consulta"
+            name="consulta"
+            rows="5"
+            placeholder="Escribe aquí tu consulta"
+            required
+          ></textarea>
+
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </section>
+    <section id="fotos">
+      <h1 class="titulo">Algunas imagenes</h1>
+      <div id="image" data-text-color="red">
+        <img id="image" src="imagenes/blue-sky.jpg" />
+      </div>
+      <div class="grid-container">
+        <div class="grid">
+          <img src="imagenes/1.jpg" alt="imagen1" class="foto" />
+          <img src="imagenes/3.jpg" alt="imagen1" class="foto" />
+          <img src="imagenes/4.jpg" alt="imagen1" class="foto" />
+          <img src="imagenes/6.jpg" alt="imagen1" class="foto" />
+          <img src="imagenes/8.jpg" alt="imagen1" class="foto" />
+          <img src="imagenes/9.jpg" alt="imagen1" class="foto" />
+          <!-- Agrega las otras imágenes aquí -->
+        </div>
+      </div>
+    </section>
+    <section id="turismo">
+      <div id="image" data-text-color="red">
+        <img id="image" src="imagenes/blue-sky.jpg" />
+      </div>
+      <h1 class="titulo">Turismo</h1>
+      <div class="turismo-grid">
+        <!-- Contenido de turismo se cargará aquí -->
+        <div class="turismo-item">
+          <img src="imagenes/turismo1.jpg" alt="Turismo 1" />
+          <h2 class="turismo-titulo">San Rafael</h2>
+          <p class="turismo-texto">
+            Cuenta hoy con un crecimiento bastante acelerado en el turismo y es
+            mundialmente conocido por sus vinos y la espectacular geografía de
+            los diferentes circuitos turísticos: el Cañón del Atuel, Cañón del
+            Diamante y El Sosneado, en donde se desarrollan diversas actividades
+            de Turismo Aventura, el circuito de Ciudad y los 'Caminos del Vino',
+            en la que los turistas pueden visitar las más importantes bodegas
+            guiados por profesionales.
+          </p>
+        </div>
+
+        <div class="turismo-item">
+          <img src="imagenes/turismo2.jpg" alt="Turismo 2" />
+          <h2 class="turismo-titulo">El cañón del Atuel</h2>
+          <p class="turismo-texto">
+            El cañón se encuentra formado por el río Atuel, embalse Valle
+            Grande, Cañón del Atuel y el Embalse El Nihuil. Es un recorrido de
+            unos 160 km ida y vuelta desde la ciudad, por los caminos
+            pavimentados remontando el nervioso río Atuel. El paisaje es muestra
+            acabada del ecosistema andino. La erosión del agua y del viento
+            esculpieron con la paciencia de los siglos el imponente y dilatado
+            socavón del cañón, que hiere caprichosamente las montañas alhajadas
+            de vegetación, en una extensión de unos 100 km. Se pueden apreciar
+            La Torta de Hojaldre, El Cinturón de San Martín, La Procesión, El
+            Hongo, el Búho, el submarino y muchas otras formaciones. Este
+            agreste escenario se presta a la práctica de los deportes de
+            aventura, siendo el Pentatlón la expresión que más integra destrezas
+            en donde se compite en windsurf, moto enduro, kayak, ciclismo,
+            pedestrismo y ráfting por el río Atuel.
+          </p>
+        </div>
+
+        <div class="turismo-item">
+          <img src="imagenes/turismo3.jpg" alt="Turismo 3" />
+          <h2 class="turismo-titulo">Cañón del Diamante</h2>
+          <p class="turismo-texto">
+            El rio Diamante es un rio argentino, en la provincia de Mendoza.
+            Nace de glaciares en el volcán Maipo, en la frontera andina
+            argentina-chilena, y fluye hacia el este hasta vaciar en el río
+            Desaguadero. Tiene una cuenca hidrográfica de 2.750 km² en la región
+            central de Mendoza. El Diamante se alimenta del deshielo que entra
+            al Lago Diamante. Tiene un caudal de 33 m/s, con máximos en
+            primavera y en verano; entre octubre-marzo suma el 70% del volumen
+            anual de agua. El curso superior del rio va al sur y finaliza yendo
+            al norte, y entra al profundo y angosto Cañón de Agua del Toro,
+            donde se indica para producir hidroelectricidad por el Embalse Agua
+            del Toro, a 69° W, aguas abajo en el Embalse Los Reyunos. Juntos
+            generan 500 MW. Al alcanzar la planicie, el Diamante pierde parte de
+            su caudal por infiltración y evaporación. Hace un gran arco, pasa al
+            sur de la ciudad de San Rafael, en el centro geográfico de la
+            provincia de Mendoza, donde se lo usa para riego (junto con el río
+            Atuel). El río se abre en múltiples brazos cortamente hasta alcanzar
+            el Desaguadero (aquí llamado Salada), en el límite con la provincia
+            de San Luis.
+          </p>
+        </div>
+
+        <div class="turismo-item">
+          <img src="imagenes/turismo4.jpg" alt="  Turismo 4" />
+          <h2 class="turismo-titulo">El Sosneado</h2>
+          <p class="turismo-texto">
+            El Sosneado es un distrito y localidad del Departamento San Rafael,
+            Provincia de Mendoza, Argentina. La localidad de El Sosneado, se
+            encuentra a 50 kilómetros de Malargüe, a 140 kilómetros de la ciudad
+            de San Rafael; a 300 kilómetros de Mendoza Capital.Desde Malargue se
+            llega a esta localidad tomando la Ruta Nacional N° 40 y luego la
+            Ruta Provincial N° 101. Desde la ciudad de San Rafael se debe tomar
+            la Ruta Provincial N° 144; Ruta Nacional N° 40; y finalmente la Ruta
+            Provincial N° 101. Debde Mendoza Capital, la Ruta Nacional N° 40 y
+            la Ruta Provincial N° 101. El 'Circuito de Alta Montaña' comprende
+            El Sosneado, Termas, Puestos y Volcanes. La imponente cordillera de
+            Los Andes, la diafanidad del cielo, llevan una marca: El Sosneado,
+            en donde primero se ve el sol. Una mezcla sorprendente conjuga las
+            más diversas citas: volcanes inactivos, aguas termales, vertientes,
+            que nos sitúan casi en otro mundo enclavado en el macizo andino.
+            Para poder recorrerlo se debe andar 135 km para las Termas y la
+            Laguna del Atuel, utilizando ómnibus o vehículos menores para las
+            excursiones.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="login">
+      <h1 class="titulo">Create una cuenta</h1>
+      <div id="image" data-text-color="red">
+        <img id="image" src="imagenes/blue-sky.jpg" />
+      </div>
+      <div class="login-form">
+        <form action="crear_usuario.php" method="post">
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Tu email"
+            required
+          />
+
+          <label for="direccion">Dirección:</label>
+          <input
+            type="text"
+            id="direccion"
+            name="direccion"
+            placeholder="Tu dirección"
+            required
+          />
+
+          <label for="telefono">Teléfono:</label>
+          <input
+            type="tel"
+            id="telefono"
+            name="telefono"
+            placeholder="Tu teléfono"
+            required
+          />
+
+          <label for="usuario">Nombre de usuario:</label>
+          <input
+            type="text"
+            id="usuario"
+            name="usuario"
+            placeholder="Nombre de usuario"
+            required
+          />
+          <label for="contrasena">Contraseña:</label>
+          <input
+            type="password"
+            id="contrasena"
+            name="contrasena"
+            placeholder="Tu contraseña"
+            required
+          />
+          <button type="submit">Crear cuenta</button>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>

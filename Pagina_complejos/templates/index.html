@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/styles.css') }}"
+    />
+    <script
+      src="{{ url_for('static', filename='js/animaciones.js') }}"
+      defer
+    ></script>
+  </head>
+  <!-- cuerpo de la pagina -->
+  <body>
+    {% include 'header.html' %}
+    <header class="header">
+      <img
+        src="{{ url_for('static', filename='imagenes/Logo2.png') }}"
+        alt="Logo"
+      />
+      <nav>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#reserva" data-color="#locura">Reservar</a></li>
+          <li><a href="#info" data-color="#ccc">Departamentos</a></li>
+          <li><a href="#contacto" data-color="#ccc">Contacto</a></li>
+          <li><a href="#fotos" data-color="#fff">Galeria</a></li>
+          <li><a href="#turismo" data-color="#45C8F5">Turismo</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!--De aqui en adelante se ve cada seccion-->
+    <section id="inicio" class="seccion-inicio">
+      {% include 'Inicio.html' %}
+    </section>
+    <section id="reserva" class="seccion-reserva">
+      {% include 'reservas.html' %}
+    </section>
+    <section id="info" class="info">{% include 'deptos.html' %}</section>
+    <section id="contacto">{% include 'contacto.html' %}</section>
+    <section id="fotos">{% include 'galeria.html' %}</section>
+    <section id="turismo">{% include 'turismo.html' %}</section>
+  </body>
+</html>

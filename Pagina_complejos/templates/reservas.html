@@ -1,0 +1,34 @@
+<h1 class="titulo">Consultar Disponibilidad</h1>
+
+<div id="image" data-text-color="red">
+  <img
+    id="image"
+    src="{{ url_for('static', filename='imagenes/blue-sky.jpg') }}"
+  />
+</div>
+<div class="login-form">
+  <form method="POST" action="/procesar_fecha">
+    <label for="email">Tipo de complejo:</label>
+    <select name="opcion">
+      <option value="opcion1">Opción 1</option>
+      <option value="opcion2">Opción 2</option>
+      <option value="opcion3">Opción 3</option>
+    </select>
+
+    <label for="direccion">Fecha de ingreso:</label>
+    <input type="date" id="fecha" name="fecha" />
+
+    <label for="telefono">Fecha de salida:</label>
+    <input type="date" id="fecha" name="fecha" />
+
+    <label for="usuario">Cantidad de personas:</label>
+    <input
+      type="text"
+      id="usuario"
+      name="usuario"
+      placeholder="Nombre de usuario"
+      required
+    />
+    <input class="input-data" type="submit" value="Enviar" />
+  </form>
+</div>

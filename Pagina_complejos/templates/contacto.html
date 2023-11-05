@@ -1,0 +1,30 @@
+<h1 class="titulo">Podes contactarnos o dejar tu consulta</h1>
+<div id="image" data-text-color="red">
+  <img
+    id="image"
+    src="{{ url_for('static', filename='imagenes/blue-sky.jpg') }}"
+  />
+</div>
+<div class="contact-form">
+  <form action="procesar_consulta.php" method="post">
+    <label for="contacto">Déjanos tu contacto:</label>
+    <input
+      type="text"
+      id="contacto"
+      name="contacto"
+      placeholder="Email o número de teléfono"
+      required
+    />
+
+    <label for="consulta">Escribe tu consulta:</label>
+    <textarea
+      id="consulta"
+      name="consulta"
+      rows="5"
+      placeholder="Escribe aquí tu consulta"
+      required
+    ></textarea>
+
+    <button type="submit">Enviar</button>
+  </form>
+</div>

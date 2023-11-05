@@ -1,0 +1,20 @@
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px;
+  display: flex; /* Usa Flexbox para alinear los elementos en línea */
+  gap: 20px; /* Agrega espacio entre los elementos */
+  justify-content: flex-end; /* Cambia a flex-end para alinear a la derecha */
+  color: #ffffff;
+}
+
+.contact-list li {
+  display: flex;
+  align-items: center;
+}
+
+.contact-list img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
