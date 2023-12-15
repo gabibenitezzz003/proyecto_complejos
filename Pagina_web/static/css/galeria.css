@@ -1,0 +1,40 @@
+/* Estilos para el contenedor de la cuadrícula de imágenes */
+.grid-container {
+  margin: 20px; /* Ajusta este valor según tu preferencia para el margen exterior */
+  padding: 20px; /* Ajusta este valor según tu preferencia para el margen interior */
+}
+
+/* Estilos para la cuadrícula de imágenes */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px; /* Ajustar este valor para los espcios entre las cuadriculas */
+}
+
+.grid img {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+/* Estilos para las imágenes en pantalla completa */
+.fullscreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.fullscreen img {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+  cursor: zoom-out;
+}

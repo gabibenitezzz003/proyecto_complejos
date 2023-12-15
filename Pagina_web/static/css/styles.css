@@ -1,0 +1,13 @@
+@import "head.css";
+@import "header.css";
+@import "inicio.css";
+@import "reserva.css";
+@import "galeria.css";
+@import "turismo.css";
+@import "contacto.css";
+
+body {
+  background-color: rgb(0, 0, 0);
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}

@@ -1,0 +1,16 @@
+# Ignorar archivos de configuración específicos para Python
+*.pyc
+__pycache__/
+# Ignorar archivos de entornos virtuales de Python
+venv/
+# Ignorar archivos generados por IDEs
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Otros ejemplos específicos de tu proyecto
+config.ini
+logs/
+
+.env

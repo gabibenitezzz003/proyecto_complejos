@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RESERVAS</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='css/styles2.css') }}"
+    />
+  </head>
+  <body>
+    <h1>ADMINISTRADOR</h1>
+    <main>
+      <section>
+        <h2>Reservas de Cabaña</h2>
+        <form id="reservation-form" action="/submit" method="POST">
+          <div class="form-row">
+            <label for="fecha_ingreso">Fecha de Ingreso:</label>
+            <input
+              type="date"
+              id="fecha_ingreso"
+              name="fecha_ingreso"
+              required
+            />
+          </div>
+
+          <div class="form-row">
+            <label for="fecha_salida">Fecha de Salida:</label>
+            <input type="date" id="fecha_salida" name="fecha_salida" required />
+          </div>
+          <div class="form-row">
+            <label for="complejo">Departamento N°:</label>
+            <select id="complejo" name="depto" required>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+              <option value="13">13</option>
+              <option value="14">14</option>
+            </select>
+          </div>
+          <input class="input-data" type="submit" value="Enviar" />
+        </form>
+        <p class="disclaimer">
+          Al hacer una reserva, aceptas nuestros términos y condiciones.
+        </p>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2023 Derechos de autor - Complejo de Cabañas</p>
+    </footer>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+  </body>
+</html>

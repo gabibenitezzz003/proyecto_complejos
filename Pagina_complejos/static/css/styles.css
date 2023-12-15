@@ -1,8 +1,0 @@
-@import "head.css";
-@import "header.css";
-@import "inicio.css";
-body {
-  background-color: rgb(0, 0, 0);
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
-}

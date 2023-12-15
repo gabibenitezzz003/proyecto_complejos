@@ -1,0 +1,106 @@
+#image-container {
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 450px; /* Agrega un margen inferior para separar el contenido siguiente */
+}
+.titulo {
+  font-family: Helvetica;
+  font-size: 50px; /* Tamaño de fuente en píxeles */
+  color: #ffffff; /* Color del texto en formato hexadecimal */
+  text-align: center; /* Centrar el texto horizontalmente */
+  margin-bottom: 20px; /* Espaciado inferior */
+  /* Puedes agregar más propiedades aquí según tus necesidades */
+}
+.titulo2 {
+  font-family: Helvetica;
+  font-size: 40px; /* Tamaño de fuente en píxeles */
+  color: #28a05a; /* Color del texto en formato hexadecimal */
+  text-align: center; /* Centrar el texto horizontalmente */
+
+  /* Puedes agregar más propiedades aquí según tus necesidades */
+}
+.titulo3 {
+  font-family: Helvetica;
+  font-size: 50px; /* Tamaño de fuente en píxeles */
+  color: #171616; /* Color del texto en formato hexadecimal */
+  text-align: center; /* Centrar el texto horizontalmente */
+  margin-bottom: 20px; /* Espaciado inferior */
+  /* Puedes agregar más propiedades aquí según tus necesidades */
+}
+
+/* Estilos paraa imagen */
+#image {
+  width: 100%;
+  height: auto;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1; /* Para que esté detrás del contenido */
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*height: 100vh;  Asegura que el contenedor ocupe el alto completo de la ventana */
+}
+
+.content-box {
+  display: flex;
+  background-color: rgba(76, 76, 76, 0.8); /* Fondo blanco con opacidad */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); /* Sombra alrededor del cuadro */
+  backdrop-filter: blur(10px); /* Efecto de desenfoque */
+  max-width: 500px; /* Ancho máximo del cuadro */
+  width: 90%; /* Ancho del cuadro en relación al viewport */
+  align-items: center; /* Alinea verticalmente los elementos */
+  gap: 15px;
+  justify-content: center;
+}
+
+.Datita {
+  background-color: #000000; /* Color de fondo de la mitad izquierda */
+  padding: 10%; /* Espacio interno del cuadro */
+}
+
+#Sanra {
+  max-width: 70%;
+  height: auto;
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+}
+.parrafo {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  text-indent: 30px;
+}
+section:not(#inicio) {
+  display: none;
+}
+
+/* No se de que es esto */
+
+.containerdep {
+  display: flex;
+  justify-content: space-between;
+}
+
+.boxdep {
+  background-color: #d4cece;
+  width: 45%; /* Ajusta el ancho según tus necesidades */
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 5px rgb(255, 255, 255);
+  width: 45%; /* Ajusta el ancho según tus necesidades */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra verticalmente en su costado */
+  justify-content: center;
+}
+/*gabi */

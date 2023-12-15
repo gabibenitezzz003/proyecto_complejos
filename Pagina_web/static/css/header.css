@@ -1,0 +1,41 @@
+header {
+  position: sticky;
+  display: flex;
+  background-color: rgba(51, 51, 51, 0);
+  color: #fff;
+  text-align: center;
+  padding: 0px;
+  align-items: center;
+  justify-content: space-between;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  /*margin-left: 0px;*/
+  display: flex;
+  align-items: center;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 30px;
+  display: flex;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  display: flex;
+}
+nav ul a:hover {
+  color: #ff6600; /* Color del texto al pasar el cursor */
+  display: flex;
+  transform: scale(1.3);
+}
+
+header img {
+  width: 150px; /* Ajusta el ancho según tus necesidades */
+  height: auto; /* Mantiene la proporción de aspecto */
+  margin-right: 0px; /* Espaciado entre el logo y el menú de navegación */
+}

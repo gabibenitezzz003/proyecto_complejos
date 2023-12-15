@@ -1,0 +1,31 @@
+/* Estilos para la cuadrícula de turismo */
+.turismo-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.turismo-item {
+  background-color: #f2f2f2;
+  border: 1px solid #ddd;
+  padding: 20px;
+  text-align: center;
+}
+
+.turismo-item img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+/* Estilos para los títulos y textos de turismo */
+.turismo-titulo {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.turismo-texto {
+  font-size: 14px;
+  line-height: 1.5;
+}
